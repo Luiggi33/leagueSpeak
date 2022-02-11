@@ -10,11 +10,11 @@ from googletrans import Translator
 
 from time import sleep
 
-
 FILE_NAME = './test.wav'  #File name to save
 wave_length = 4  #Recording length (seconds)
 sample_rate = 16_000  #Sampling frequency
 translator = Translator() #Translator object
+
 while True:
     keyboard.wait('g')
     print("RECORDING ***")
