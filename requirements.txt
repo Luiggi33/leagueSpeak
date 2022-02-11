@@ -1,0 +1,6 @@
+googletrans==4.0.0rc1
+keyboard==0.13.5
+numpy==1.21.4
+PyAutoGUI==0.9.53
+sounddevice==0.4.4
+SpeechRecognition==3.8.1
