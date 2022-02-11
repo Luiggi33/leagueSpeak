@@ -6,12 +6,15 @@ import wave
 import keyboard
 import pyautogui as pag
 
+from googletrans import Translator
+
 from time import sleep
 
 
 FILE_NAME = './test.wav'  #File name to save
 wave_length = 4  #Recording length (seconds)
 sample_rate = 16_000  #Sampling frequency
+translator = Translator() #Translator object
 while True:
     keyboard.wait('g')
     print("RECORDING ***")
@@ -31,9 +34,6 @@ while True:
         wb.setsampwidth(2)  # 16bit=2byte
         wb.setframerate(sample_rate)
         wb.writeframes(data.tobytes())  #Convert to byte string
-       
-       
-   
    
     filename = "test.wav"
     r = sr.Recognizer()
@@ -42,8 +42,12 @@ while True:
         # listen for the data (load audio to memory)
         audio_data = r.record(source)
         # recognize (convert from speech to text)
-        text = r.recognize_google(audio_data)
-        print(text)
+        try:
+            text = r.recognize_google(audio_data, language = "de-DE") #speechrecognition from google
+            text = translator.translate(text, src="de", dest="en").text #Translate to english
+            print(text)
+        except sr.UnknownValueError:
+            print("Google Speech Recognition could not understand audio")
 
     keyboard.press_and_release('enter')
     sleep(0.01)
