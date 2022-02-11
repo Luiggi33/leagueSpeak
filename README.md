@@ -20,5 +20,7 @@ I suggest to only use it in a game of league of legends.
 
 ## Credits
 MilesJuddPorter - Main Code
+
 Luiggi33 - Implementation of the Translation
+
 RvNx Mango - Idea for German Translation
