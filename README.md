@@ -13,7 +13,10 @@
 ## How to use
 When the script is open, everytime you press G your voice will be recorded and translated to english text.
 Everytime your voice is recorded, it will be printed to the console window.
+
 I would suggest you wait a very short duration after pressing G so nothing of your voice is cut.
+
+I suggest to only use it in a game of league of legends.
 
 ## Credits
 MilesJuddPorter - Main Code
