@@ -4,7 +4,7 @@
 ## It is important that this Version translates German into English
 
 ## How to install
-1. Open a Command Line in your wanted destination
+1. Open a command line in your wanted destination
 2. Clone this repository
 3. Navigate to `/leagueSpeak-german`
 4. Run `pip install -r requirements.txt`
@@ -21,6 +21,6 @@ I suggest to only use it in a game of league of legends.
 ## Credits
 MilesJuddPorter - Main Code
 
-Luiggi33 - Implementation of the Translation
+Luiggi33 - Implementation of the translation
 
-RvNx Mango - Idea for German Translation
+RvNx Mango - Idea for german translation
