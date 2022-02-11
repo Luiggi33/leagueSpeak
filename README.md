@@ -1,7 +1,7 @@
 # League Speak - German
-> Simple Tool to put your speech into the Leauge of Legends Chat
+> Simple tool to put your speech into the League of Legends chat
 
-## It is important that this Version translates German into English
+## It is important that this version translates German into English
 
 ## How to install
 1. Open a command line in your wanted destination
